@@ -1,0 +1,11 @@
+{
+  "name": "ecoplay-root",
+  "version": "1.0.0",
+  "description": "Root package for EcoPlay",
+  "scripts": {
+    "start": "npx -y concurrently \"npm run start --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev": "npm run dev --prefix frontend",
+    "backend": "npm run start --prefix backend",
+    "install-all": "npm install --prefix backend && npm install --prefix frontend"
+  }
+}
